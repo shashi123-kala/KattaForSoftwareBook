@@ -19,4 +19,5 @@ public class CalculateDiscountTest {
 		double discount = 0.00;
 		assertEquals(50.0, calculateDiscount.getTotalPrice(discount));
 	}
+
 }
