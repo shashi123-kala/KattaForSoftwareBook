@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 public class CalculateDiscountTest {
 
+	public static final String SOFTWARE_DEVELOPMENT_BOOK_I = "Clean Code (Robert Martin, 2008)";
+
 	@Test
 	public void initializeToBuyBook() {
 		CalculateDiscount calculateDiscount = new CalculateDiscount();
@@ -15,7 +17,7 @@ public class CalculateDiscountTest {
 	@Test
 	public void buyingOneBook() {
 		CalculateDiscount calculateDiscount = new CalculateDiscount();
-		String book = "Clean Code (Robert Martin, 2008)";
+		String book = SOFTWARE_DEVELOPMENT_BOOK_I;
 		double discount = 0.00;
 		assertEquals(50.0, calculateDiscount.getTotalPrice(discount));
 	}
